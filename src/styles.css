@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+h2 {
+  background: lightgrey;
+  display: grid;
+  place-items: center;
+}
+
+.App {
+  max-width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 5rem minmax(10rem, 1fr);
+}
+
+.App h2 {
+  grid-column: 1/-1;
+  border: 1px solid;
+}
+
+.create-note {
+  border-right: 2px solid;
+}
+
+.create-note input,
+textarea {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid;
+  outline: none;
+}
+
+/* create-note input:, textarea */
+
+.create-note button {
+  padding: 1rem;
+  border: none;
+  background: darkgoldenrod;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.notes-wrapper {
+  text-align: center;
+  height: 100%;
+  padding: 1rem;
+}
+
+.notes {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  /* border: 1px solid; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  /* border: 1px solid; */
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 30rem;
+  text-align: left;
+  background: whitesmoke;
+}
+
+.note h4,
+p {
+  padding: 8px 0;
+}
